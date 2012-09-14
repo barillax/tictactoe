@@ -1,24 +1,189 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1906" systemVersion="11A511" targetRuntime="iOS.CocoaTouch" nextObjectID="6" propertyAccessControl="none" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2549" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="aql-fW-JGM">
     <dependencies>
-        <development defaultVersion="4200" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="902"/>
+        <deployment defaultVersion="1296" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1498"/>
     </dependencies>
     <scenes>
+        <!--View Controller - Home-->
         <scene sceneID="5">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
-                <viewController id="2" customClass="ORViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Home" title="Home" id="2" customClass="ORViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Tic Tac Toe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="7C1-0X-UMx">
+                                <rect key="frame" x="20" y="13" width="280" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="38"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Hmu-bM-KoC">
+                                <rect key="frame" x="20" y="198" width="280" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="26"/>
+                                <state key="normal" title="2 Player Game">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="KlX-lu-JDL" kind="modal" modalTransitionStyle="flipHorizontal" id="Mk7-0L-SGp"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Ulu-f4-Nyj"/>
                 </viewController>
             </objects>
+            <point key="canvasLocation" x="664" y="181"/>
+        </scene>
+        <!--Game View Controller - Game-->
+        <scene sceneID="adB-6n-kWg">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tvp-pe-BYs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="Game" title="Game" id="KlX-lu-JDL" customClass="ORGameViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FbG-1b-Tnk">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Y6I-sK-4t2">
+                                <rect key="frame" x="20" y="389" width="130" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="18"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="exitGame:" destination="KlX-lu-JDL" eventType="touchUpInside" id="iCv-Qr-LA2"/>
+                                </connections>
+                            </button>
+                            <imageView contentMode="scaleToFill" id="2kd-81-9aa">
+                                <rect key="frame" x="20" y="91" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="1" contentMode="scaleToFill" id="luG-Lm-NaE">
+                                <rect key="frame" x="115" y="91" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="2" contentMode="scaleToFill" id="cVH-vZ-Tyf">
+                                <rect key="frame" x="210" y="91" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="3" contentMode="scaleToFill" id="lJV-pr-2OS">
+                                <rect key="frame" x="20" y="185" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="4" contentMode="scaleToFill" id="6k8-Gy-Gey">
+                                <rect key="frame" x="115" y="185" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="5" contentMode="scaleToFill" id="d3w-5k-Usz">
+                                <rect key="frame" x="210" y="185" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="6" contentMode="scaleToFill" id="87h-Gj-J2L">
+                                <rect key="frame" x="20" y="279" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="7" contentMode="scaleToFill" id="z11-WX-Lze">
+                                <rect key="frame" x="115" y="279" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="8" contentMode="scaleToFill" id="Wb3-cC-uMF">
+                                <rect key="frame" x="210" y="279" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Player 1's Turn!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="hEv-TM-BGF">
+                                <rect key="frame" x="20" y="20" width="280" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="q08-aN-JNQ">
+                                <rect key="frame" x="170" y="389" width="130" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="18"/>
+                                <state key="normal" title="New Game">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="newGame:" destination="KlX-lu-JDL" eventType="touchUpInside" id="zlS-FA-CAB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="izh-VT-4mt"/>
+                    <connections>
+                        <outlet property="turnLabel" destination="hEv-TM-BGF" id="ShO-5w-Tgt"/>
+                        <outletCollection property="tiles" destination="2kd-81-9aa" id="hpk-qd-SCe"/>
+                        <outletCollection property="tiles" destination="6k8-Gy-Gey" id="S0Q-fJ-UxE"/>
+                        <outletCollection property="tiles" destination="luG-Lm-NaE" id="sII-ee-8bh"/>
+                        <outletCollection property="tiles" destination="cVH-vZ-Tyf" id="J8D-gC-b5z"/>
+                        <outletCollection property="tiles" destination="lJV-pr-2OS" id="rRd-8C-Ped"/>
+                        <outletCollection property="tiles" destination="d3w-5k-Usz" id="YWB-0T-vwC"/>
+                        <outletCollection property="tiles" destination="87h-Gj-J2L" id="vFI-Gs-dGY"/>
+                        <outletCollection property="tiles" destination="z11-WX-Lze" id="hEz-2h-ehq"/>
+                        <outletCollection property="tiles" destination="Wb3-cC-uMF" id="jrE-nF-nSZ"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1099" y="181"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="BzW-ja-De3">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bos-OB-J8M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController navigationBarHidden="YES" id="aql-fW-JGM" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Wif-hP-Cvm"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1ve-TU-RKj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="5hB-78-FjF">
+                        <rect key="frame" x="0.0" y="436" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="8op-BW-kQJ"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="240" y="181"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="ORGameViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ORGameViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="exitGame:"/>
+                <relationship kind="action" name="newGame:"/>
+                <relationship kind="outlet" name="turnLabel" candidateClass="UILabel"/>
+                <relationship kind="outletCollection" name="tiles" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="ORViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ORViewController.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
