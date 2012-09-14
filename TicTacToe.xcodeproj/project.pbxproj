@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		392B120B15FD4EA50053BDB1 /* Icon57.png in Resources */ = {isa = PBXBuildFile; fileRef = 392B120915FD4EA50053BDB1 /* Icon57.png */; };
+		392B120C15FD4EA50053BDB1 /* Icon114.png in Resources */ = {isa = PBXBuildFile; fileRef = 392B120A15FD4EA50053BDB1 /* Icon114.png */; };
+		392B120F15FD4F4C0053BDB1 /* tile_player_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 392B120D15FD4F4C0053BDB1 /* tile_player_1@2x.png */; };
+		392B121015FD4F4C0053BDB1 /* tile_player_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 392B120E15FD4F4C0053BDB1 /* tile_player_2@2x.png */; };
+		3978285C15FBE9BC007EC3D8 /* ORGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3978285B15FBE9BC007EC3D8 /* ORGameViewController.m */; };
+		3978286215FBF183007EC3D8 /* tile_default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3978285F15FBF183007EC3D8 /* tile_default.png */; };
+		3978286315FBF183007EC3D8 /* tile_player_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3978286015FBF183007EC3D8 /* tile_player_1.png */; };
+		3978286415FBF183007EC3D8 /* tile_player_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3978286115FBF183007EC3D8 /* tile_player_2.png */; };
 		39FFBA7C15FBE2BD0015C9A6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39FFBA7B15FBE2BD0015C9A6 /* UIKit.framework */; };
 		39FFBA7E15FBE2BD0015C9A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39FFBA7D15FBE2BD0015C9A6 /* Foundation.framework */; };
 		39FFBA8015FBE2BD0015C9A6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39FFBA7F15FBE2BD0015C9A6 /* CoreGraphics.framework */; };
@@ -18,6 +26,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		392B120915FD4EA50053BDB1 /* Icon57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon57.png; path = images/Icon57.png; sourceTree = "<group>"; };
+		392B120A15FD4EA50053BDB1 /* Icon114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon114.png; path = images/Icon114.png; sourceTree = "<group>"; };
+		392B120D15FD4F4C0053BDB1 /* tile_player_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tile_player_1@2x.png"; path = "images/tile_player_1@2x.png"; sourceTree = "<group>"; };
+		392B120E15FD4F4C0053BDB1 /* tile_player_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tile_player_2@2x.png"; path = "images/tile_player_2@2x.png"; sourceTree = "<group>"; };
+		3978285A15FBE9BC007EC3D8 /* ORGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORGameViewController.h; sourceTree = "<group>"; };
+		3978285B15FBE9BC007EC3D8 /* ORGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORGameViewController.m; sourceTree = "<group>"; };
+		3978285F15FBF183007EC3D8 /* tile_default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tile_default.png; path = images/tile_default.png; sourceTree = "<group>"; };
+		3978286015FBF183007EC3D8 /* tile_player_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tile_player_1.png; path = images/tile_player_1.png; sourceTree = "<group>"; };
+		3978286115FBF183007EC3D8 /* tile_player_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tile_player_2.png; path = images/tile_player_2.png; sourceTree = "<group>"; };
 		39FFBA7715FBE2BD0015C9A6 /* TicTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39FFBA7B15FBE2BD0015C9A6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		39FFBA7D15FBE2BD0015C9A6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -47,6 +64,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3978285E15FBF168007EC3D8 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				392B120D15FD4F4C0053BDB1 /* tile_player_1@2x.png */,
+				392B120E15FD4F4C0053BDB1 /* tile_player_2@2x.png */,
+				392B120915FD4EA50053BDB1 /* Icon57.png */,
+				392B120A15FD4EA50053BDB1 /* Icon114.png */,
+				3978285F15FBF183007EC3D8 /* tile_default.png */,
+				3978286015FBF183007EC3D8 /* tile_player_1.png */,
+				3978286115FBF183007EC3D8 /* tile_player_2.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
 		39FFBA6C15FBE2BD0015C9A6 = {
 			isa = PBXGroup;
 			children = (
@@ -77,9 +108,12 @@
 		39FFBA8115FBE2BD0015C9A6 /* TicTacToe */ = {
 			isa = PBXGroup;
 			children = (
+				3978285E15FBF168007EC3D8 /* images */,
 				39FFBA8A15FBE2BD0015C9A6 /* ORAppDelegate.h */,
 				39FFBA8B15FBE2BD0015C9A6 /* ORAppDelegate.m */,
 				39FFBA8D15FBE2BD0015C9A6 /* MainStoryboard.storyboard */,
+				3978285A15FBE9BC007EC3D8 /* ORGameViewController.h */,
+				3978285B15FBE9BC007EC3D8 /* ORGameViewController.m */,
 				39FFBA9015FBE2BD0015C9A6 /* ORViewController.h */,
 				39FFBA9115FBE2BD0015C9A6 /* ORViewController.m */,
 				39FFBA8215FBE2BD0015C9A6 /* Supporting Files */,
@@ -152,6 +186,13 @@
 			files = (
 				39FFBA8615FBE2BD0015C9A6 /* InfoPlist.strings in Resources */,
 				39FFBA8F15FBE2BD0015C9A6 /* MainStoryboard.storyboard in Resources */,
+				3978286215FBF183007EC3D8 /* tile_default.png in Resources */,
+				3978286315FBF183007EC3D8 /* tile_player_1.png in Resources */,
+				3978286415FBF183007EC3D8 /* tile_player_2.png in Resources */,
+				392B120B15FD4EA50053BDB1 /* Icon57.png in Resources */,
+				392B120C15FD4EA50053BDB1 /* Icon114.png in Resources */,
+				392B120F15FD4F4C0053BDB1 /* tile_player_1@2x.png in Resources */,
+				392B121015FD4F4C0053BDB1 /* tile_player_2@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,6 +206,7 @@
 				39FFBA8815FBE2BD0015C9A6 /* main.m in Sources */,
 				39FFBA8C15FBE2BD0015C9A6 /* ORAppDelegate.m in Sources */,
 				39FFBA9215FBE2BD0015C9A6 /* ORViewController.m in Sources */,
+				3978285C15FBE9BC007EC3D8 /* ORGameViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,6 +240,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -213,6 +256,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -225,6 +269,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -234,6 +279,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -280,6 +326,7 @@
 				39FFBA9715FBE2BD0015C9A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
